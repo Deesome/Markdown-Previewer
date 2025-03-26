@@ -36,6 +36,7 @@ async function convertToMarkDown(input) {
 
         outputElement.innerHTML = markdown
 
+        // Get all the code blocks and highlight them
         document.querySelectorAll('pre code').forEach((block) => {
             hljs.highlightElement(block);
         });
