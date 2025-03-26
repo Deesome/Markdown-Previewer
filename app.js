@@ -33,7 +33,6 @@ inputElement.addEventListener("input", function () {
 async function convertToMarkDown(input) {
     try {
         const markdown = await marked.parse(input, { async: true })
-
         outputElement.innerHTML = markdown
 
         // Get all the code blocks and highlight them
@@ -45,8 +44,6 @@ async function convertToMarkDown(input) {
         outputElement.innerHTML = `<p>Error occurs while converting the file`
 
     }
-
-   
 
 }
 
