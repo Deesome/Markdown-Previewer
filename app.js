@@ -19,19 +19,10 @@ marked.setOptions({
     },
 });
 
-
-
-
-
-
-
 const inputElement = document.getElementById("input")
 const outputElement = document.getElementById("output")
 const resetBtn = document.querySelector(".reset-btn")
 const copyBtn = document.querySelector(".copy-btn")
-
-
-
 
 inputElement.addEventListener("input", function () {
     const inputValue = this.value
@@ -58,10 +49,7 @@ async function convertToMarkDown(input) {
 
 }
 
- hljs.highlightAll()
-
-
- function handleReset(){
+function handleReset(){
     inputElement.value = ""
     outputElement.innerHTML = ""
  }
@@ -70,11 +58,7 @@ async function convertToMarkDown(input) {
     if(!outputElement.innerText){
         alert("No text present for copy")
     }
-
     const valueToBeCopied = outputElement.innerText
-
-    
-
     navigator.clipboard.writeText(valueToBeCopied)
     .then(()=>{
         alert("copy to clipBoard")
