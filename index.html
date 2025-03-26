@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Previewer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Highlight.js for syntax highlighting -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Markdown Previewer</h1>
+
+        <div class="input-output-container">
+            <div class="input-container">
+                <div class="heading-container">
+                    <h3 class="heading">Input</h3>
+                    <button class="reset-btn btn">Reset</button>
+                </div>
+                <div class="textbox-container">
+                    <textarea id="input"></textarea>
+                </div>
+            </div>
+            <div class="output-container">
+                
+                    <div class="heading-container">
+                        <h3 class="heading">Output</h3>
+                        <button class="copy-btn btn">Copy</button>
+                    </div>
+                    <div class="textbox-container">
+                        <div id="output"></div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>    <script src="app.js" type="module"></script>
+
+</body>
+
+</html>
